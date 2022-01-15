@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartParking.MainPage"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             Title="Bienvenido">
+
+    <StackLayout>
+        <Frame Padding="24" CornerRadius="0">
+            <Image Source="smartparkinglogo.png"/>
+        </Frame>
+        <Label Text="¿Tienes alguna emergencia?" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Estamos pendientes de tí, solicita ayuda inmediata!!!" FontSize="16" Padding="30,0,30,0"/>
+        <!--<Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>-->
+        <inputLayout:SfTextInputLayout
+           Hint="Establecimiento: "
+           Margin="40,16,40,16"
+           HelperText="Ingresa un establecimiento">
+                    <Entry />
+        </inputLayout:SfTextInputLayout>
+
+        <!--  Login button  -->
+        <buttons:SfButton
+                            Grid.Row="5"
+                            Margin="40,16,40,16"
+                            Command="{Binding LoginCommand}"
+                            HorizontalOptions="Fill"
+                            Style="{StaticResource GradientButtonStyle}"
+                            Text="Enviar Alerta"
+                            Clicked="btnLocation_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,60 @@
+
+
+Date:2022-01-15 12:16:41,204
+Thread:[1]
+Level:ERROR
+Logger:Syncfusion.Xamarin.UI.MainViewModel                         [(null)]
+Message:Microsoft.VisualStudio.ProjectSystem.NameCollisionException: A file with name 'IValidationRule.cs' is already part of the project. Please give a unique name to the item you are adding, or delete the existing item first.
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode.RunWizard(SimpleHierarchyNode parentNode, String itemName, String wizardToRun, IntPtr dlgOwner)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode.<AddItemWithSpecificAsync>d__608.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.Automation.OAProjectItems.<>c__DisplayClass1_0.<<AddFromTemplate>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.Automation.OAProject.<>c__DisplayClass72_0`1.<<Mutate>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode.<>c__DisplayClass568_0.<<Mutate>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.Threading.JoinableTask.CompleteOnCurrentThread()
+   at Microsoft.VisualStudio.ProjectSystem.ProjectMultiThreadedService.ExecuteSynchronously(Func`1 asyncAction)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode.Mutate(Func`1 asyncAction, Boolean includesFileSystemChange, String telemetryActivity)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.Automation.OAProject.Mutate[T](Func`1 asyncAction, Boolean includesFileSystemChange, String telemetryActivity)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.Automation.OAProjectItems.AddFromTemplate(String fileName, String name)
+   at Syncfusion.Xamarin.UI.MainWindow.AddItem_Click(Object sender, RoutedEventArgs e)
+
+
+Date:2022-01-15 12:16:42,974
+Thread:[1]
+Level:ERROR
+Logger:Syncfusion.Xamarin.UI.MainViewModel                         [(null)]
+Message:Microsoft.VisualStudio.ProjectSystem.NameCollisionException: A file with name 'IValidationRule.cs' is already part of the project. Please give a unique name to the item you are adding, or delete the existing item first.
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode.RunWizard(SimpleHierarchyNode parentNode, String itemName, String wizardToRun, IntPtr dlgOwner)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode.<AddItemWithSpecificAsync>d__608.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.Automation.OAProjectItems.<>c__DisplayClass1_0.<<AddFromTemplate>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.Automation.OAProject.<>c__DisplayClass72_0`1.<<Mutate>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode.<>c__DisplayClass568_0.<<Mutate>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.VisualStudio.Threading.JoinableTask.CompleteOnCurrentThread()
+   at Microsoft.VisualStudio.ProjectSystem.ProjectMultiThreadedService.ExecuteSynchronously(Func`1 asyncAction)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectNode.Mutate(Func`1 asyncAction, Boolean includesFileSystemChange, String telemetryActivity)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.Automation.OAProject.Mutate[T](Func`1 asyncAction, Boolean includesFileSystemChange, String telemetryActivity)
+   at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.Automation.OAProjectItems.AddFromTemplate(String fileName, String name)
+   at Syncfusion.Xamarin.UI.MainWindow.AddItem_Click(Object sender, RoutedEventArgs e)
