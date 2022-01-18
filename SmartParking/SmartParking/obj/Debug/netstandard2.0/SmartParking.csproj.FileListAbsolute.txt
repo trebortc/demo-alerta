@@ -2,6 +2,7 @@ C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\bin\D
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\bin\Debug\netstandard2.0\SmartParking.dll
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\bin\Debug\netstandard2.0\ref\SmartParking.dll
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\bin\Debug\netstandard2.0\SmartParking.pdb
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\SmartParking.csprojAssemblyReference.cache
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\SmartParking.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
@@ -37,4 +38,3 @@ C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\D
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\SmartParking.dll
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\ref\SmartParking.dll
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\SmartParking.pdb
-C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\SmartParking.csprojAssemblyReference.cache

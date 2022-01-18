@@ -10,6 +10,7 @@
     xmlns:converter="clr-namespace:SmartParking.Converters"
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+    xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
     xmlns:local="clr-namespace:SmartParking.Views"
     xmlns:viewModel="clr-namespace:SmartParking.ViewModels"
     Title="Sign Up"
@@ -81,7 +82,7 @@
                                         x:Name="NameEntry"
                                         Margin="15,0"
                                         HeightRequest="40"
-                                        Placeholder="Nombre"
+                                        Placeholder="Nombres Completos"
                                         PlaceholderColor="{StaticResource EntryPlaceholderColor}"
                                         Style="{StaticResource BorderlessEntryStyle}"
                                         Text="{Binding Name.Value}"
@@ -113,7 +114,6 @@
 
                         <!--  Entry to get email ID from user  -->
                         <local:EmailEntry />
-
                         <StackLayout>
                             <!--  Entry to get password from user  -->
                             <border:SfBorder BorderColor="{Binding Source={x:Reference PasswordEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" Style="{StaticResource LoginFormBorderlessEntryBorderStyle}">
@@ -153,7 +153,6 @@
                                 TextColor="{DynamicResource Red}"
                                 VerticalOptions="FillAndExpand" />
                         </StackLayout>
-
                         <StackLayout>
                             <!--  Entry to get the confirm password from user  -->
                             <border:SfBorder BorderColor="{Binding Source={x:Reference ConfirmPasswordEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" Style="{StaticResource LoginFormBorderlessEntryBorderStyle}">
@@ -193,7 +192,178 @@
                                 TextColor="{DynamicResource Red}"
                                 VerticalOptions="FillAndExpand" />
                         </StackLayout>
+                        <StackLayout>
+                            <!--  Direccion -->
+                            <border:SfBorder BorderColor="{Binding Source={x:Reference DireccionEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" Style="{StaticResource LoginFormBorderlessEntryBorderStyle}">
+                                <Grid ColumnDefinitions="*, Auto">
 
+                                    <control:BorderlessEntry
+                                        x:Name="DireccionEntry"
+                                        Margin="15,0"
+                                        HeightRequest="40"
+                                        Placeholder="Dirección"
+                                        PlaceholderColor="{StaticResource EntryPlaceholderColor}"
+                                        Style="{StaticResource BorderlessEntryStyle}"
+                                        Text="{Binding Direccion.Value}"
+                                        TextColor="{StaticResource Gray-White}">
+                                        <Entry.Behaviors>
+                                            <behaviour:EntryLineValidationBehaviour IsValid="{Binding Direccion.IsValid}" />
+                                        </Entry.Behaviors>
+                                    </control:BorderlessEntry>
+
+                                    <!--  Label to display error icon  -->
+                                    <Label
+                                        Grid.Column="1"
+                                        IsVisible="{Binding Path=IsVisible, Source={x:Reference DireccionValidationLabel}}"
+                                        Style="{StaticResource ErrorIconLabelStyle}"
+                                        Text="{StaticResource Error}" />
+                                </Grid>
+                            </border:SfBorder>
+
+                            <!--  Label to display error message  -->
+                            <Label
+                                x:Name="DireccionValidationLabel"
+                                Margin="15,-3,0,0"
+                                IsVisible="{Binding Direccion.IsValid, Converter={StaticResource InverseBoolConverter}}"
+                                Style="{StaticResource SimpleLabelStyle}"
+                                Text="{Binding Direccion.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                                TextColor="{DynamicResource Red}"
+                                VerticalOptions="FillAndExpand" />
+                        </StackLayout>
+                        <StackLayout>
+                            <!--  Telefono -->
+                            <border:SfBorder BorderColor="{Binding Source={x:Reference TelefonoEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" Style="{StaticResource LoginFormBorderlessEntryBorderStyle}">
+                                <Grid ColumnDefinitions="*, Auto">
+
+                                    <control:BorderlessEntry
+                                        x:Name="TelefonoEntry"
+                                        Margin="15,0"
+                                        HeightRequest="40"
+                                        Placeholder="Telefono"
+                                        PlaceholderColor="{StaticResource EntryPlaceholderColor}"
+                                        Style="{StaticResource BorderlessEntryStyle}"
+                                        Text="{Binding Telefono.Value}"
+                                        TextColor="{StaticResource Gray-White}">
+                                        <Entry.Behaviors>
+                                            <behaviour:EntryLineValidationBehaviour IsValid="{Binding Telefono.IsValid}" />
+                                        </Entry.Behaviors>
+                                    </control:BorderlessEntry>
+
+                                    <!--  Label to display error icon  -->
+                                    <Label
+                                        Grid.Column="1"
+                                        IsVisible="{Binding Path=IsVisible, Source={x:Reference TelefonoValidationLabel}}"
+                                        Style="{StaticResource ErrorIconLabelStyle}"
+                                        Text="{StaticResource Error}" />
+                                </Grid>
+                            </border:SfBorder>
+
+                            <!--  Label to display error message  -->
+                            <Label
+                                x:Name="TelefonoValidationLabel"
+                                Margin="15,-3,0,0"
+                                IsVisible="{Binding Telefono.IsValid, Converter={StaticResource InverseBoolConverter}}"
+                                Style="{StaticResource SimpleLabelStyle}"
+                                Text="{Binding Telefono.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                                TextColor="{DynamicResource Red}"
+                                VerticalOptions="FillAndExpand" />
+                        </StackLayout>
+                        <StackLayout>
+                            <!--  Contacto nombre -->
+                            <border:SfBorder BorderColor="{Binding Source={x:Reference ContactoNombreEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" Style="{StaticResource LoginFormBorderlessEntryBorderStyle}">
+                                <Grid ColumnDefinitions="*, Auto">
+
+                                    <control:BorderlessEntry
+                                        x:Name="ContactoNombreEntry"
+                                        Margin="15,0"
+                                        HeightRequest="40"
+                                        Placeholder="Nombres contacto"
+                                        PlaceholderColor="{StaticResource EntryPlaceholderColor}"
+                                        Style="{StaticResource BorderlessEntryStyle}"
+                                        Text="{Binding ContactoNombres.Value}"
+                                        TextColor="{StaticResource Gray-White}">
+                                        <Entry.Behaviors>
+                                            <behaviour:EntryLineValidationBehaviour IsValid="{Binding ContactoNombres.IsValid}" />
+                                        </Entry.Behaviors>
+                                    </control:BorderlessEntry>
+
+                                    <!--  Label to display error icon  -->
+                                    <Label
+                                        Grid.Column="1"
+                                        IsVisible="{Binding Path=IsVisible, Source={x:Reference ContactoNombreValidationLabel}}"
+                                        Style="{StaticResource ErrorIconLabelStyle}"
+                                        Text="{StaticResource Error}" />
+                                </Grid>
+                            </border:SfBorder>
+
+                            <!--  Label to display error message  -->
+                            <Label
+                                x:Name="ContactoNombreValidationLabel"
+                                Margin="15,-3,0,0"
+                                IsVisible="{Binding ContactoNombres.IsValid, Converter={StaticResource InverseBoolConverter}}"
+                                Style="{StaticResource SimpleLabelStyle}"
+                                Text="{Binding ContactoNombres.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                                TextColor="{DynamicResource Red}"
+                                VerticalOptions="FillAndExpand" />
+                        </StackLayout>
+                        <StackLayout>
+                            <!--  Contacto telefono -->
+                            <border:SfBorder BorderColor="{Binding Source={x:Reference ContactoTelefonoEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" Style="{StaticResource LoginFormBorderlessEntryBorderStyle}">
+                                <Grid ColumnDefinitions="*, Auto">
+
+                                    <control:BorderlessEntry
+                                        x:Name="ContactoTelefonoEntry"
+                                        Margin="15,0"
+                                        HeightRequest="40"
+                                        Placeholder="Telefono contacto"
+                                        PlaceholderColor="{StaticResource EntryPlaceholderColor}"
+                                        Style="{StaticResource BorderlessEntryStyle}"
+                                        Text="{Binding ContactoTelefono.Value}"
+                                        TextColor="{StaticResource Gray-White}">
+                                        <Entry.Behaviors>
+                                            <behaviour:EntryLineValidationBehaviour IsValid="{Binding ContactoTelefono.IsValid}" />
+                                        </Entry.Behaviors>
+                                    </control:BorderlessEntry>
+
+                                    <!--  Label to display error icon  -->
+                                    <Label
+                                        Grid.Column="1"
+                                        IsVisible="{Binding Path=IsVisible, Source={x:Reference ContactoTelefonoValidationLabel}}"
+                                        Style="{StaticResource ErrorIconLabelStyle}"
+                                        Text="{StaticResource Error}" />
+                                </Grid>
+                            </border:SfBorder>
+
+                            <!--  Label to display error message  -->
+                            <Label
+                                x:Name="ContactoTelefonoValidationLabel"
+                                Margin="15,-3,0,0"
+                                IsVisible="{Binding ContactoTelefono.IsValid, Converter={StaticResource InverseBoolConverter}}"
+                                Style="{StaticResource SimpleLabelStyle}"
+                                Text="{Binding ContactoTelefono.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                                TextColor="{DynamicResource Red}"
+                                VerticalOptions="FillAndExpand" />
+                        </StackLayout>
+                        <StackLayout>
+                            <combobox:SfComboBox
+                            Grid.Row="2"
+                            HeightRequest="40"
+                            Style="{StaticResource ComboBoxStyleLogin}"
+                            DataSource="{Binding CentralEmergencias}"
+                            DisplayMemberPath="NOMBRE"                             
+                            SelectedItem="{Binding CentralEmergenciaSelected, Mode=TwoWay}"
+                            Watermark="Elija una central de emergencia"
+                            NoResultsFoundText="Ningun resultado encontrado"
+                            TextColor="Black">
+                                <combobox:SfComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout>
+                                            <Label Text="{Binding NOMBRE}" TextColor="Black" HorizontalOptions="End" Padding="0,5,10,5"/>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </combobox:SfComboBox.ItemTemplate>
+                            </combobox:SfComboBox>
+                        </StackLayout>
                         <!--  Sign-up button  -->
                         <buttons:SfButton
                             Command="{Binding SignUpCommand}"

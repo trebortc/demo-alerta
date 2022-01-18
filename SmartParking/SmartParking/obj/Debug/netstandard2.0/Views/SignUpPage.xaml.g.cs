@@ -35,6 +35,30 @@ namespace SmartParking.Views {
         private global::Xamarin.Forms.Label ConfirmPasswordValidationLabel;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SmartParking.Controls.BorderlessEntry DireccionEntry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label DireccionValidationLabel;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SmartParking.Controls.BorderlessEntry TelefonoEntry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label TelefonoValidationLabel;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SmartParking.Controls.BorderlessEntry ContactoNombreEntry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label ContactoNombreValidationLabel;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::SmartParking.Controls.BorderlessEntry ContactoTelefonoEntry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label ContactoTelefonoValidationLabel;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SignUpPage));
             NameEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SmartParking.Controls.BorderlessEntry>(this, "NameEntry");
@@ -43,6 +67,14 @@ namespace SmartParking.Views {
             PasswordValidationLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "PasswordValidationLabel");
             ConfirmPasswordEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SmartParking.Controls.BorderlessEntry>(this, "ConfirmPasswordEntry");
             ConfirmPasswordValidationLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "ConfirmPasswordValidationLabel");
+            DireccionEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SmartParking.Controls.BorderlessEntry>(this, "DireccionEntry");
+            DireccionValidationLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "DireccionValidationLabel");
+            TelefonoEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SmartParking.Controls.BorderlessEntry>(this, "TelefonoEntry");
+            TelefonoValidationLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "TelefonoValidationLabel");
+            ContactoNombreEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SmartParking.Controls.BorderlessEntry>(this, "ContactoNombreEntry");
+            ContactoNombreValidationLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "ContactoNombreValidationLabel");
+            ContactoTelefonoEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::SmartParking.Controls.BorderlessEntry>(this, "ContactoTelefonoEntry");
+            ContactoTelefonoValidationLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "ContactoTelefonoValidationLabel");
         }
     }
 }

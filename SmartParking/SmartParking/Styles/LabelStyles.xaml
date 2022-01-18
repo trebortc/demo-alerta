@@ -2,6 +2,7 @@
 <ResourceDictionary
     x:Class="SmartParking.Styles.LabelStyles"
     xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <!--  Common style for Title labels  -->
@@ -55,6 +56,20 @@
         <Setter Property="HorizontalTextAlignment" Value="End" />
         <Setter Property="TextColor" Value="{DynamicResource Red}" />
         <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+
+    <Style x:Key="ComboBoxStyleLogin" TargetType="combobox:SfComboBox">
+        <Setter Property="FontFamily" Value="Montserrat-SemiBold"/>
+        <Setter Property="TextSize" Value="12"/>
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="ShowBorder" Value="True"/>
+        <Setter Property="WatermarkColor" Value="{DynamicResource Gray-White}"/>
+        <Setter Property="Margin" Value="15,0,0,10"/>
+        <Setter Property="ItemPadding" Value="10,0,0,10"/>
+        <Setter Property="HeightRequest" Value="35"/>
+        <Setter Property="WidthRequest" Value="300"/>
+        <Setter Property="DropDownBackgroundColor" Value="{DynamicResource Transparent}"/>
+        <Setter Property="SelectedDropDownItemColor" Value="{DynamicResource Transparent}"/>
     </Style>
 
 </ResourceDictionary>

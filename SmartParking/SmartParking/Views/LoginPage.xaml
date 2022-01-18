@@ -10,6 +10,7 @@
     xmlns:converter="clr-namespace:SmartParking.Converters"
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+    xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
     xmlns:local="clr-namespace:SmartParking.Views"
     xmlns:viewModel="clr-namespace:SmartParking.ViewModels"
     BackgroundImageSource="{core:OnPlatformOrientationStringValue Default=smartparking.png,
@@ -74,9 +75,9 @@
                             TextColor="{DynamicResource Gray-White}" />
 
                         <!--  Entry to get email ID from user  -->
-                        <local:EmailEntry Grid.Row="2" Padding="0,24" />
+                        <local:EmailEntry Grid.Row="3" Padding="0,24" />
 
-                        <StackLayout Grid.Row="3">
+                        <StackLayout Grid.Row="4">
                             <!--  Entry to get password from user  -->
                             <border:SfBorder BorderColor="{Binding Source={x:Reference PasswordEntry}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" Style="{StaticResource LoginFormBorderlessEntryBorderStyle}">
                                 <Grid ColumnDefinitions="*, Auto">
@@ -119,7 +120,7 @@
                         <!--  Forgot password link  -->
                         <buttons:SfButton
                             x:Name="ForgotPasswordLabel"
-                            Grid.Row="4"
+                            Grid.Row="5"
                             Margin="0,16"
                             Command="{Binding ForgotPasswordCommand}"
                             FontSize="12"
@@ -131,7 +132,7 @@
 
                         <!--  Login button  -->
                         <buttons:SfButton
-                            Grid.Row="5"
+                            Grid.Row="6"
                             Margin="0,16"
                             Command="{Binding LoginCommand}"
                             HorizontalOptions="Fill"

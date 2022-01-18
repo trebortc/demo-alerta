@@ -84,6 +84,7 @@ C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Andro
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\android\assets\mscorlib.dll
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\android\assets\mscorlib.pdb
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\android\assets\netstandard.dll
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\android\assets\Newtonsoft.Json.dll
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\android\assets\SmartParking.Android.dll
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\android\assets\SmartParking.Android.pdb
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\android\assets\SmartParking.dll

@@ -1,6 +1,11 @@
-﻿using SmartParking.Validators;
+﻿using Newtonsoft.Json;
+using SmartParking.DataService;
+using SmartParking.Model;
+using SmartParking.Validators;
 using SmartParking.Validators.Rules;
 using SmartParking.Views;
+using System;
+using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -13,9 +18,8 @@ namespace SmartParking.ViewModels
     public class LoginPageViewModel : LoginViewModel
     {
         #region Fields
-
         private ValidatableObject<string> password;
-
+        private Usuario usuario;
         #endregion
 
         #region Constructor
@@ -56,8 +60,7 @@ namespace SmartParking.ViewModels
 
                 this.SetProperty(ref this.password, value);
             }
-        }
-
+        }       
         #endregion
 
         #region Command
@@ -121,6 +124,23 @@ namespace SmartParking.ViewModels
         {
             if (this.AreFieldsValid())
             {
+                Usuario usuario = ApiService.Instance.PostLogin(new Usuario { usuario = Email.ToString(), clave = Password.ToString() }).Result;
+
+                if(usuario == null)
+                {
+                    Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Credenciales usuario", "Email o clave incorrectos", "Aceptar");
+                    return;
+                }
+                
+                if(!usuario.login)
+                {
+                    Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Credenciales usuario", "Email o clave incorrectos", "Aceptar");
+                    return;                    
+                }
+                
+                var usuarioString = JsonConvert.SerializeObject(usuario);
+                App.Current.Properties["usuario"] = usuarioString;
+
                 Application.Current.MainPage = new NavigationPage(new MainPage());
             }
         }
@@ -150,8 +170,7 @@ namespace SmartParking.ViewModels
         private void SocialLoggedIn(object obj)
         {
             // Do something
-        }
-
+        }        
         #endregion
     }
 }

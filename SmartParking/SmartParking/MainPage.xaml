@@ -26,7 +26,7 @@
            Hint="Establecimiento: "
            Margin="40,16,40,16"
            HelperText="Ingresa un establecimiento">
-                    <Entry />
+            <Entry Text="{Binding Establecimiento }"/>
         </inputLayout:SfTextInputLayout>
 
         <!--  Login button  -->
