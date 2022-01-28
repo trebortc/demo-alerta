@@ -30,6 +30,7 @@ C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\D
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\Views\ForgotPasswordPageWithGradient.xaml.g.cs
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\Views\ResetPasswordPageWithGradient.xaml.g.cs
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\Views\ReviewPage.xaml.g.cs
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\Views\SignUpPage.xaml.g.cs
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\SmartParking.AssemblyInfoInputs.cache
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Debug\netstandard2.0\SmartParking.AssemblyInfo.cs

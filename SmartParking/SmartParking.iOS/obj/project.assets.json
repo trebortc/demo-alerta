@@ -100,6 +100,23 @@
           "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfMaps/19.4.0.42": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.4.0.42",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.dll": {}
+        }
+      },
       "Syncfusion.Xamarin.SfRating/19.4.0.42": {
         "type": "package",
         "dependencies": {
@@ -266,6 +283,18 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.OpenWhatsApp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1009999"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        }
+      },
       "SmartParking/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -277,7 +306,8 @@
           "Syncfusion.Xamarin.SfListView": "19.4.0.42",
           "Syncfusion.Xamarin.SfRating": "19.4.0.42",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.OpenWhatsApp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/SmartParking.dll": {}
@@ -386,6 +416,23 @@
           "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfMaps/19.4.0.42": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.4.0.42",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.dll": {}
+        }
+      },
       "Syncfusion.Xamarin.SfRating/19.4.0.42": {
         "type": "package",
         "dependencies": {
@@ -552,6 +599,18 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.OpenWhatsApp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1009999"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        }
+      },
       "SmartParking/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -563,7 +622,8 @@
           "Syncfusion.Xamarin.SfListView": "19.4.0.42",
           "Syncfusion.Xamarin.SfRating": "19.4.0.42",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.OpenWhatsApp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/SmartParking.dll": {}
@@ -672,6 +732,23 @@
           "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfMaps/19.4.0.42": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.4.0.42",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.dll": {}
+        }
+      },
       "Syncfusion.Xamarin.SfRating/19.4.0.42": {
         "type": "package",
         "dependencies": {
@@ -838,6 +915,18 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.OpenWhatsApp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1009999"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        }
+      },
       "SmartParking/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -849,7 +938,8 @@
           "Syncfusion.Xamarin.SfListView": "19.4.0.42",
           "Syncfusion.Xamarin.SfRating": "19.4.0.42",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.OpenWhatsApp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/SmartParking.dll": {}
@@ -958,6 +1048,23 @@
           "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfMaps/19.4.0.42": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.4.0.42",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.dll": {}
+        }
+      },
       "Syncfusion.Xamarin.SfRating/19.4.0.42": {
         "type": "package",
         "dependencies": {
@@ -1124,6 +1231,18 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.OpenWhatsApp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1009999"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        }
+      },
       "SmartParking/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1135,7 +1254,8 @@
           "Syncfusion.Xamarin.SfListView": "19.4.0.42",
           "Syncfusion.Xamarin.SfRating": "19.4.0.42",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012"
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Forms.OpenWhatsApp": "1.0.1"
         },
         "compile": {
           "bin/placeholder/SmartParking.dll": {}
@@ -1402,6 +1522,43 @@
         "lib/uap10.0/Syncfusion.SfListView.XForms.xml",
         "syncfusion.xamarin.sflistview.19.4.0.42.nupkg.sha512",
         "syncfusion.xamarin.sflistview.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.SfMaps/19.4.0.42": {
+      "sha512": "2xoqxgTAyqO+wbcBsQZKD4oHKMOT6RQYT5mJ/6Wp9B5HBi7w6gCaQFq/+iE5b2FhGvhxYHseywfDP0wN2+Vasg==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfmaps/19.4.0.42",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.SfMaps.Android.XML",
+        "lib/MonoAndroid10.0/Syncfusion.SfMaps.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfMaps.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfMaps.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfMaps.XForms.xml",
+        "lib/MonoAndroid90/Syncfusion.SfMaps.Android.XML",
+        "lib/MonoAndroid90/Syncfusion.SfMaps.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfMaps.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfMaps.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.SfMaps.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfMaps.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfMaps.iOS.xml",
+        "lib/netstandard2.0/Syncfusion.SfMaps.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfMaps.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfMaps.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfMaps.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfMaps.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfMaps.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfMaps.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfMaps.XForms.xml",
+        "syncfusion.xamarin.sfmaps.19.4.0.42.nupkg.sha512",
+        "syncfusion.xamarin.sfmaps.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -1755,6 +1912,18 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.OpenWhatsApp/1.0.1": {
+      "sha512": "q7NM7cgSs/Ab8xRCRBFGKW8ROYVZuRlOkzrKapVXK8Oe7Jkbh7+x8QH9ZAdphz9tzNvkMgulAuFbta+9fzeO7Q==",
+      "type": "package",
+      "path": "xamarin.forms.openwhatsapp/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll",
+        "xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512",
+        "xamarin.forms.openwhatsapp.nuspec"
+      ]
+    },
     "SmartParking/1.0.0": {
       "type": "project",
       "path": "../SmartParking/SmartParking.csproj",
@@ -1768,9 +1937,11 @@
       "Syncfusion.Xamarin.Core >= 19.4.0.42",
       "Syncfusion.Xamarin.SfComboBox >= 19.4.0.42",
       "Syncfusion.Xamarin.SfListView >= 19.4.0.42",
+      "Syncfusion.Xamarin.SfMaps >= 19.4.0.42",
       "Syncfusion.Xamarin.SfRating >= 19.4.0.42",
       "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Forms >= 5.0.0.2012"
+      "Xamarin.Forms >= 5.0.0.2012",
+      "Xamarin.Forms.OpenWhatsApp >= 1.0.1"
     ]
   },
   "packageFolders": {
@@ -1834,6 +2005,10 @@
             "target": "Package",
             "version": "[19.4.0.42, )"
           },
+          "Syncfusion.Xamarin.SfMaps": {
+            "target": "Package",
+            "version": "[19.4.0.42, )"
+          },
           "Syncfusion.Xamarin.SfRating": {
             "target": "Package",
             "version": "[19.4.0.42, )"
@@ -1845,6 +2020,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2012, )"
+          },
+          "Xamarin.Forms.OpenWhatsApp": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           }
         }
       }

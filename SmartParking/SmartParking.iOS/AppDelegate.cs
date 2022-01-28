@@ -1,3 +1,5 @@
+using Syncfusion.SfMaps.XForms.iOS;
+using Syncfusion.XForms.iOS.Graphics;
 using Syncfusion.SfRating.XForms.iOS;
 using Syncfusion.ListView.XForms.iOS;
 using Syncfusion.XForms.iOS.ComboBox;
@@ -31,6 +33,8 @@ namespace SmartParking.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            Core.Init();
+            SfMapsRenderer.Init();
             SfRatingRenderer.Init();
             SfListViewRenderer.Init();
             SfComboBoxRenderer.Init();

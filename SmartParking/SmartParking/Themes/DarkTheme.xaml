@@ -29,11 +29,11 @@
     <Color x:Key="PrimaryColor">#3E94FF</Color>
     <Color x:Key="PrimaryDarkColor">#2A89FF</Color>
     <Color x:Key="PrimaryDarkenColor">#0B78FF</Color>
-    <Color x:Key="PrimaryLighterColor">#71B0FF</Color>
+    <Color x:Key="PrimaryLighterColor">#EBEDEF</Color>
     <Color x:Key="PrimaryGradient">#3E65FF</Color>
     <Color x:Key="PrimaryLight">#A4CDFF</Color>
-    <Color x:Key="SecondaryGradient">#A4CDFF</Color>
-    <Color x:Key="Secondary">#A4CDFF</Color>
+    <Color x:Key="SecondaryGradient">#FFF8DC</Color>
+    <Color x:Key="Secondary">#FFF8DC</Color>
     <Color x:Key="Green">#7ED321</Color>
     <Color x:Key="Red">#2F343C</Color>
     <Color x:Key="Orange">#FF844A</Color>

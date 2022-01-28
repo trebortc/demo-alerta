@@ -11,6 +11,7 @@
     xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
     xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
     xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+    xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
     xmlns:local="clr-namespace:SmartParking.Views"
     xmlns:viewModel="clr-namespace:SmartParking.ViewModels"
     Title="Sign Up"
@@ -345,24 +346,26 @@
                                 VerticalOptions="FillAndExpand" />
                         </StackLayout>
                         <StackLayout>
-                            <combobox:SfComboBox
-                            Grid.Row="2"
-                            HeightRequest="40"
-                            Style="{StaticResource ComboBoxStyleLogin}"
-                            DataSource="{Binding CentralEmergencias}"
-                            DisplayMemberPath="NOMBRE"                             
-                            SelectedItem="{Binding CentralEmergenciaSelected, Mode=TwoWay}"
-                            Watermark="Elija una central de emergencia"
-                            NoResultsFoundText="Ningun resultado encontrado"
-                            TextColor="Black">
-                                <combobox:SfComboBox.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackLayout>
-                                            <Label Text="{Binding NOMBRE}" TextColor="Black" HorizontalOptions="End" Padding="0,5,10,5"/>
-                                        </StackLayout>
-                                    </DataTemplate>
-                                </combobox:SfComboBox.ItemTemplate>
-                            </combobox:SfComboBox>
+                            <inputLayout:SfTextInputLayout Style="{DynamicResource TextInputLayoutStyle2}">
+                                <combobox:SfComboBox
+                                Grid.Row="2"
+                                HeightRequest="40"                                
+                                Style="{StaticResource TextInputLayoutComboBoxStyle}"
+                                DataSource="{Binding CentralEmergencias}"
+                                DisplayMemberPath="NOMBRE"                             
+                                SelectedItem="{Binding CentralEmergenciaSelected, Mode=TwoWay}"
+                                Watermark="Elija una central de emergencia"
+                                NoResultsFoundText="Ningun resultado encontrado"
+                                >
+                                    <combobox:SfComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackLayout>
+                                                <Label Text="{Binding NOMBRE}" TextColor="Black" HorizontalOptions="End" Padding="0,5,10,5"/>
+                                            </StackLayout>
+                                        </DataTemplate>
+                                    </combobox:SfComboBox.ItemTemplate>
+                                </combobox:SfComboBox>
+                            </inputLayout:SfTextInputLayout>
                         </StackLayout>
                         <!--  Sign-up button  -->
                         <buttons:SfButton

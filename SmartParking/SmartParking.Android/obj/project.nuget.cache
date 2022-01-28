@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gDk0P84h6OUDrdyQj1spZs8G3fcP0TDTd1ahvwUtiUZt7iyrALUoLFurd3v5sXcx7jBAdTrmBrxmDgPgG0AeSg==",
+  "dgSpecHash": "e8f7GFU/+t9vWZ0abNoBPkDMc4sIorZ/ej8hfc+/u2bCla0uSx66RNorpqyHnK8h2tLl/4CxZ6bLt1FA0R5xBg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo01\\Documents\\Git\\com.SmartParking\\SmartParking\\SmartParking.Android\\SmartParking.Android.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\19.4.0.42\\syncfusion.xamarin.gridcommon.19.4.0.42.nupkg.sha512",
     "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\19.4.0.42\\syncfusion.xamarin.sfcombobox.19.4.0.42.nupkg.sha512",
     "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.sflistview\\19.4.0.42\\syncfusion.xamarin.sflistview.19.4.0.42.nupkg.sha512",
+    "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.sfmaps\\19.4.0.42\\syncfusion.xamarin.sfmaps.19.4.0.42.nupkg.sha512",
     "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.sfrating\\19.4.0.42\\syncfusion.xamarin.sfrating.19.4.0.42.nupkg.sha512",
     "C:\\Users\\Lenovo01\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
@@ -60,6 +61,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.viewpager2\\1.0.0.8\\xamarin.androidx.viewpager2.1.0.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\Lenovo01\\.nuget\\packages\\xamarin.forms.openwhatsapp\\1.0.1\\xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.android.material\\1.2.1.1\\xamarin.google.android.material.1.2.1.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],

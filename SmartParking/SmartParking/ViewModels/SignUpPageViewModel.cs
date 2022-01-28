@@ -4,7 +4,9 @@ using SmartParking.Validators;
 using SmartParking.Validators.Rules;
 using SmartParking.Views;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -281,14 +283,17 @@ namespace SmartParking.ViewModels
         {
             try
             {
-                var centralesEmergencia = ApiService.Instance.GetCentralesEmergencia().Result;
+                List<CentralEmergencia> centralesEmergencia = ApiService.Instance.GetCentralesEmergencia().Result;
 
-                if (centralEmergencias == null)
+                if (centralesEmergencia == null)
                 {
                     CentralEmergencias = new ObservableCollection<CentralEmergencia>();
                 }
-
-                CentralEmergencias = new ObservableCollection<CentralEmergencia>(centralesEmergencia);
+                else
+                {
+                    CentralEmergencias = new ObservableCollection<CentralEmergencia>(centralesEmergencia);
+                    CentralEmergenciaSelected = centralEmergencias.First();
+                }                                                
             }
             catch (Exception e)
             {

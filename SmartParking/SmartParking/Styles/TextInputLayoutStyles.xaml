@@ -19,4 +19,17 @@
         <Setter Property="FocusedStrokeWidth" Value="1" />
     </Style>
 
+    <Style x:Key="TextInputLayoutStyle2" TargetType="inputLayout:SfTextInputLayout">
+        <Setter Property="UnfocusedColor" Value="{DynamicResource EntryPlaceholderColor}" />
+        <Setter Property="ContainerType" Value="Outlined" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="OutlineCornerRadius" Value="4" />
+        <Setter Property="ContainerBackgroundColor" Value="Transparent" />
+        <Setter Property="FocusedColor" Value="{DynamicResource EntryPlaceholderColor}" />
+        <Setter Property="ReserveSpaceForAssistiveLabels" Value="False" />
+        <Setter Property="InputViewPadding" Value="12,0,0,0" />
+        <Setter Property="Margin" Value="0,-8,0,0" />
+        <Setter Property="FocusedStrokeWidth" Value="1" />
+    </Style>
+
 </ResourceDictionary>

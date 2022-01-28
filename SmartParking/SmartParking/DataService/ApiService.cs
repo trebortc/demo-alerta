@@ -36,29 +36,29 @@ namespace SmartParking.DataService
         {
 
             List<CentralEmergencia> centralEmergencias = new List<CentralEmergencia>();
-            HttpResponseMessage response = await client.GetAsync(URL + "/obtenerCentralEmergenciaTodos").ConfigureAwait(false);
+            HttpResponseMessage response = client.GetAsync(URL + "/obtenerCentralEmergenciaTodos").Result;
 
             if (!response.IsSuccessStatusCode)
             {
                 return null;
             }
 
-            string content = await response.Content.ReadAsStringAsync();
-
-            return new List<CentralEmergencia>(JsonConvert.DeserializeObject<List<CentralEmergencia>>(content));
+            string content = response.Content.ReadAsStringAsync().Result;
+            //centralEmergencias = JsonConvert.DeserializeObject<List<CentralEmergencia>>(content);
+            return JsonConvert.DeserializeObject<List<CentralEmergencia>>(content);
         }
 
         public async Task<Usuario> PostLogin(Usuario usuario)
         {
             var stringContent = new StringContent(JsonConvert.SerializeObject(usuario), Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await client.PostAsync(URL + "/login", stringContent).ConfigureAwait(false);
+            HttpResponseMessage response = client.PostAsync(URL + "/login", stringContent).Result;
             
             if (!response.IsSuccessStatusCode)
             {               
                 return null;
             }
 
-            string content = await response.Content.ReadAsStringAsync();
+            string content = response.Content.ReadAsStringAsync().Result;
 
             return JsonConvert.DeserializeObject<Usuario>(content);
         }
@@ -66,14 +66,14 @@ namespace SmartParking.DataService
         public async Task<bool> PostAlerta(Alerta alerta)
         {
             var stringContent = new StringContent(JsonConvert.SerializeObject(alerta), Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await client.PostAsync(URL + "/registro_alerta", stringContent).ConfigureAwait(false);
+            HttpResponseMessage response = client.PostAsync(URL + "/registro_alerta", stringContent).Result;
 
             if (!response.IsSuccessStatusCode)
             {
                 return false;
             }
 
-            string content = await response.Content.ReadAsStringAsync();
+            string content = response.Content.ReadAsStringAsync().Result;
 
             return JsonConvert.DeserializeObject<bool>(content);
         }
@@ -81,14 +81,14 @@ namespace SmartParking.DataService
         public async Task<Usuario> PostUsuarioRegistro(Usuario usuario)
         {
             var stringContent = new StringContent(JsonConvert.SerializeObject(usuario), Encoding.UTF8, "application/json");
-            HttpResponseMessage response = await client.PostAsync(URL + "/registro", stringContent).ConfigureAwait(false);
+            HttpResponseMessage response = client.PostAsync(URL + "/registro", stringContent).Result;
             
             if (!response.IsSuccessStatusCode)
             {
                 return null;
             }
 
-            string content = await response.Content.ReadAsStringAsync();
+            string content = response.Content.ReadAsStringAsync().Result;
 
             return JsonConvert.DeserializeObject<Usuario>(content);
         }

@@ -118,7 +118,7 @@
                         </StackLayout>
 
                         <!--  Forgot password link  -->
-                        <buttons:SfButton
+                        <!--<buttons:SfButton
                             x:Name="ForgotPasswordLabel"
                             Grid.Row="5"
                             Margin="0,16"
@@ -127,7 +127,7 @@
                             HorizontalOptions="End"
                             Style="{StaticResource TransparentButtonStyle}"
                             Text="OLVIDO SU CONTRASEÑA?"
-                            TextColor="{DynamicResource Gray-White}" />
+                            TextColor="{DynamicResource Gray-White}" />-->
 
 
                         <!--  Login button  -->
@@ -200,7 +200,7 @@
                             Command="{Binding SignUpCommand}"
                             Style="{StaticResource TransparentButtonStyle}"
                             Text="Registrarse"
-                            TextColor="{DynamicResource PrimaryColor}" />
+                            TextColor="{DynamicResource Gray-White}" />
 
                     </StackLayout>
 

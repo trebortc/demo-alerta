@@ -170,7 +170,7 @@ namespace SmartParking.ViewModels
         private void SocialLoggedIn(object obj)
         {
             // Do something
-        }        
+        }
         #endregion
     }
 }

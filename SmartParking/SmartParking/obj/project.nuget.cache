@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kqy2I9z9xIL6vwyciZh8NVRSMqWLCQmtdUHTaP1d+ieiIsDWQc5PyClpz1WE8s0oxpI126OARPsrMiGWxUYcmw==",
+  "dgSpecHash": "+1PdwzL8QEpyjuln2ncWqpizehn8wr5UoHX1Z6rG4+xea493hiPdK2x1imt9GdxQ85b74MsuUIsFc488HB5PNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo01\\Documents\\Git\\com.SmartParking\\SmartParking\\SmartParking\\SmartParking.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,8 @@
     "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.sfrating\\19.4.0.42\\syncfusion.xamarin.sfrating.19.4.0.42.nupkg.sha512",
     "C:\\Users\\Lenovo01\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\Lenovo01\\.nuget\\packages\\xamarin.forms.openwhatsapp\\1.0.1\\xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }

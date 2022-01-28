@@ -2788,6 +2788,7 @@ namespace SmartParking.Droid
 			global::Syncfusion.ListView.XForms.Android.Resource.String.ApplicationName = global::SmartParking.Droid.Resource.String.ApplicationName;
 			global::Syncfusion.ListView.XForms.Android.Resource.String.Hello = global::SmartParking.Droid.Resource.String.Hello;
 			global::Syncfusion.ListView.XForms.Android.Resource.String.Load_More = global::SmartParking.Droid.Resource.String.Load_More;
+			global::Com.Syncfusion.Maps.Resource.Id.image = global::SmartParking.Droid.Resource.Id.image;
 			global::Com.Syncfusion.Rating.Resource.Attribute.ratingControlValue = global::SmartParking.Droid.Resource.Attribute.ratingControlValue;
 			global::Com.Syncfusion.Rating.Resource.Attribute.ratingEnableAutoSize = global::SmartParking.Droid.Resource.Attribute.ratingEnableAutoSize;
 			global::Com.Syncfusion.Rating.Resource.Attribute.ratingItemCount = global::SmartParking.Droid.Resource.Attribute.ratingItemCount;

@@ -5,6 +5,8 @@ using SmartParking.Model;
 using Newtonsoft.Json;
 using SmartParking.DataService;
 using System.Collections.Generic;
+using Xamarin.Forms.OpenWhatsApp;
+using SmartParking.Views;
 
 namespace SmartParking
 {
@@ -22,6 +24,7 @@ namespace SmartParking
                 OnPropertyChanged(nameof(Establecimiento));
             }
         }
+        public CentralEmergencia centralEmergencia { get; set; }
         public Usuario usuario { get; set; }
         public MainPage()
         {
@@ -36,12 +39,13 @@ namespace SmartParking
             }
 
             List<CentralEmergencia> centrales = ApiService.Instance.GetCentralesEmergencia().Result;
-            CentralEmergencia centralEmergencia = new CentralEmergencia();
+            
             foreach (var central in centrales)
             {
                 if(central.ID == usuario.id_central)
                 {
                     Establecimiento = "" + central.NOMBRE;
+                    centralEmergencia = central;
                 }
             }
 
@@ -58,8 +62,8 @@ namespace SmartParking
 
                 if (location != null)
                 {
-                    Latitud = "Latitude: " + location.Latitude.ToString();
-                    Longitud = "Longitude:" + location.Longitude.ToString();
+                    Latitud = location.Latitude.ToString();
+                    Longitud = location.Longitude.ToString();
                 }
 
                 alerta.latitud = Latitud;
@@ -79,17 +83,44 @@ namespace SmartParking
             }
             catch (FeatureNotSupportedException fnsEx)
             {
-                await DisplayAlert("Faild", fnsEx.Message, "OK");
+                await DisplayAlert("Error", fnsEx.Message, "OK");
             }
             catch (PermissionException pEx)
             {
-                await DisplayAlert("Faild", pEx.Message, "OK");
+                await DisplayAlert("Error", pEx.Message, "OK");
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Faild", ex.Message, "OK");
+                await DisplayAlert("Error", ex.Message, "OK");
             }
 
+        }
+        public async void btnLLamada_Clicked(object sender, System.EventArgs e)
+        {
+            try
+            {
+                
+                PhoneDialer.Open(centralEmergencia.TELEFONO);
+            }catch(Exception ex)
+            {
+                await DisplayAlert("Error", ex.Message, "OK");
+            }
+        }
+        public async void btnMensaje_Clicked(object sender, System.EventArgs e)
+        {
+            try
+            {
+                Chat.Open("+593" + centralEmergencia.TELEFONO, "Auxilio!!");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", ex.Message, "OK");
+            }
+        }
+        public void btnSalir_Clicked(object sender, System.EventArgs e)
+        {
+            App.Current.Properties["usuario"] = "";
+            Application.Current.MainPage = new NavigationPage(new LoginPage());
         }
     }
 }

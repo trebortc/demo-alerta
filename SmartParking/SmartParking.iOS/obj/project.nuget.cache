@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "y2qs3piIfP9stYLagQt62NskIxf+Vjb3B1Xw89wqrlJRuDu2BGeX0xyiCd6WckWo5zznVU3IR0M83DaZCqHU5w==",
+  "dgSpecHash": "5qSM9DxCP5fOkaSggokAhgvOKyKRvbcYIf5w77mQsYKCCOwgdt+p0zjn/3rspjc2LPra4otmR0wZLuoD1uBQgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo01\\Documents\\Git\\com.SmartParking\\SmartParking\\SmartParking.iOS\\SmartParking.iOS.csproj",
   "expectedPackageFiles": [
@@ -12,10 +12,12 @@
     "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\19.4.0.42\\syncfusion.xamarin.gridcommon.19.4.0.42.nupkg.sha512",
     "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\19.4.0.42\\syncfusion.xamarin.sfcombobox.19.4.0.42.nupkg.sha512",
     "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.sflistview\\19.4.0.42\\syncfusion.xamarin.sflistview.19.4.0.42.nupkg.sha512",
+    "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.sfmaps\\19.4.0.42\\syncfusion.xamarin.sfmaps.19.4.0.42.nupkg.sha512",
     "C:\\Users\\Lenovo01\\.nuget\\packages\\syncfusion.xamarin.sfrating\\19.4.0.42\\syncfusion.xamarin.sfrating.19.4.0.42.nupkg.sha512",
     "C:\\Users\\Lenovo01\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\Lenovo01\\.nuget\\packages\\xamarin.forms.openwhatsapp\\1.0.1\\xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512"
   ],
   "logs": []
 }
