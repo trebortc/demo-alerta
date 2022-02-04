@@ -124,17 +124,17 @@ namespace SmartParking.ViewModels
         {
             if (this.AreFieldsValid())
             {
-                Usuario usuario = ApiService.Instance.PostLogin(new Usuario { usuario = Email.ToString(), clave = Password.ToString() }).Result;
+                usuario = ApiService.Instance.PostLogin(new Usuario { usuario = Email.ToString(), clave = Password.ToString() }).Result;
 
                 if(usuario == null)
                 {
-                    Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Credenciales usuario", "Email o clave incorrectos", "Aceptar");
+                    Application.Current.MainPage.DisplayAlert("Credenciales usuario", "Email o clave incorrectos", "Aceptar");
                     return;
                 }
                 
                 if(!usuario.login)
                 {
-                    Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Credenciales usuario", "Email o clave incorrectos", "Aceptar");
+                    Application.Current.MainPage.DisplayAlert("Credenciales usuario", "Email o clave incorrectos", "Aceptar");
                     return;                    
                 }
                 
@@ -160,7 +160,7 @@ namespace SmartParking.ViewModels
         /// <param name="obj">The Object</param>
         private void ForgotPasswordClicked(object obj)
         {
-            Application.Current.MainPage.Navigation.PushAsync(new ForgotPasswordPageWithGradient());
+            //Application.Current.MainPage.Navigation.PushAsync(new ForgotPasswordPageWithGradient());
         }
 
         /// <summary>

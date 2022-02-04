@@ -110,7 +110,7 @@ namespace SmartParking
         {
             try
             {
-                Chat.Open("+593" + centralEmergencia.TELEFONO, "Auxilio!!");
+                Chat.Open("+593" + centralEmergencia.WHATSAPP, "Auxilio!!");
             }
             catch (Exception ex)
             {
@@ -119,7 +119,7 @@ namespace SmartParking
         }
         public void btnSalir_Clicked(object sender, System.EventArgs e)
         {
-            App.Current.Properties["usuario"] = "";
+            Application.Current.Properties.Clear();
             Application.Current.MainPage = new NavigationPage(new LoginPage());
         }
     }

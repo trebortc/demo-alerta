@@ -19,19 +19,15 @@ namespace SmartParking
         {
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NTY1NzAzQDMxMzkyZTM0MmUzMEk3TGVNdTQvb0gvRGpSQlY0dFZaTWJ2VkpNOEZSUzNFWkFnOTlIdkVQeFk9");
             InitializeComponent();
-            //MainPage = new LoginPage();
             if (App.Current.Properties.ContainsKey("usuario"))
             {
                 Usuario usuario = JsonConvert.DeserializeObject<Usuario>((string)App.Current.Properties["usuario"]);
-                if (usuario != null)
-                {
-                    MainPage = new NavigationPage(new MainPage());
-                }
-                else
-                {
-                    MainPage = new NavigationPage(new LoginPage());
-                }
-            }            
+                MainPage = new NavigationPage(new MainPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new LoginPage());
+            }
         }
 
         protected override void OnStart()

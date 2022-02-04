@@ -38,3 +38,4 @@ C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\R
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Release\netstandard2.0\ref\SmartParking.dll
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Release\netstandard2.0\SmartParking.pdb
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Release\netstandard2.0\SmartParking.csprojAssemblyReference.cache
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking\obj\Release\netstandard2.0\Views\ReviewPage.xaml.g.cs
