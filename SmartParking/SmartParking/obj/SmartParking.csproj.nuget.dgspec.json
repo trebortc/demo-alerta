@@ -56,6 +56,18 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "SkiaSharp.Extended": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Svg": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Views.Forms": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
             "Syncfusion.Xamarin.Buttons": {
               "target": "Package",
               "version": "[19.4.0.42, )"
@@ -73,6 +85,10 @@
               "version": "[19.4.0.42, )"
             },
             "Syncfusion.Xamarin.SfRating": {
+              "target": "Package",
+              "version": "[19.4.0.42, )"
+            },
+            "Syncfusion.Xamarin.SfRotator": {
               "target": "Package",
               "version": "[19.4.0.42, )"
             },

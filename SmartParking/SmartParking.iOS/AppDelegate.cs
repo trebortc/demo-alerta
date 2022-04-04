@@ -1,3 +1,4 @@
+using Syncfusion.SfRotator.XForms.iOS;
 using Syncfusion.SfMaps.XForms.iOS;
 using Syncfusion.XForms.iOS.Graphics;
 using Syncfusion.SfRating.XForms.iOS;
@@ -33,6 +34,7 @@ namespace SmartParking.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            SfRotatorRenderer.Init();
             Core.Init();
             SfMapsRenderer.Init();
             SfRatingRenderer.Init();

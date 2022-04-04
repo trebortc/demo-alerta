@@ -25,8 +25,18 @@ namespace SmartParking
                 MainPage = new NavigationPage(new MainPage());
             }
             else
-            {
-                MainPage = new NavigationPage(new LoginPage());
+            {                
+                if (App.Current.Properties.ContainsKey("mensaje"))
+                {
+                    MainPage = new NavigationPage(new LoginPage());
+                }
+                else
+                {
+                    string mensajeLocalizacion = "s";
+                    var mensaje = JsonConvert.SerializeObject(mensajeLocalizacion);
+                    App.Current.Properties["mensaje"] = mensaje;
+                    MainPage = new NavigationPage(new Location2Page());
+                }                
             }
         }
 

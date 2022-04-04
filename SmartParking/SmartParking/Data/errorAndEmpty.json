@@ -1,0 +1,5 @@
+{
+  "locationDeniedImagePath": "LocationAccessDenied.svg",
+  "locationDeniedHeader": "LOCATION BLOCKED",
+  "locationDeniedContent": "Smart Parking recopila datos de ubicación para permitir el seguimiento de su ubicación en la emision de alertas de emergencia incluso cuando la aplicación está cerrada o no está en uso."
+}

@@ -11,6 +11,87 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "SkiaSharp/1.68.0": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SkiaSharp.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/tizen-armel/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "tizen-armel"
+          },
+          "runtimes/tizen-x86/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "tizen-x86"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SkiaSharp.Extended/1.60.0": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.60.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SkiaSharp.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.Extended.dll": {}
+        }
+      },
+      "SkiaSharp.Svg/1.60.0": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.60.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll": {}
+        }
+      },
+      "SkiaSharp.Views/1.68.0": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0"
+        },
+        "compile": {
+          "lib/MonoAndroid/SkiaSharp.Views.Android.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SkiaSharp.Views.Android.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/1.68.0": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.68.0",
+          "SkiaSharp.Views": "1.68.0",
+          "Xamarin.Forms": "3.3.0.912540"
+        },
+        "compile": {
+          "lib/MonoAndroid/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SkiaSharp.Views.Forms.dll": {}
+        }
+      },
       "Syncfusion.Licensing/19.4.0.42": {
         "type": "package",
         "compile": {
@@ -132,6 +213,23 @@
           "lib/MonoAndroid10.0/Syncfusion.SfRating.Android.dll": {},
           "lib/MonoAndroid10.0/Syncfusion.SfRating.XForms.Android.dll": {},
           "lib/MonoAndroid10.0/Syncfusion.SfRating.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRotator/19.4.0.42": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.4.0.42",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.SfRotator.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.SfRotator.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -1120,11 +1218,15 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "SkiaSharp.Extended": "1.60.0",
+          "SkiaSharp.Svg": "1.60.0",
+          "SkiaSharp.Views.Forms": "1.68.0",
           "Syncfusion.Xamarin.Buttons": "19.4.0.42",
           "Syncfusion.Xamarin.Core": "19.4.0.42",
           "Syncfusion.Xamarin.SfComboBox": "19.4.0.42",
           "Syncfusion.Xamarin.SfListView": "19.4.0.42",
           "Syncfusion.Xamarin.SfRating": "19.4.0.42",
+          "Syncfusion.Xamarin.SfRotator": "19.4.0.42",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.OpenWhatsApp": "1.0.1"
@@ -1164,6 +1266,141 @@
         "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "SkiaSharp/1.68.0": {
+      "sha512": "ptuxAKk9FiClNnAgWM8hVMCYw/B0hUJWZ8W6efnIAtJmJn/Xl4jvxxDF5WOqfQYCLVzxXw5gvBPVxvTLblFp0g==",
+      "type": "package",
+      "path": "skiasharp/1.68.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net45/SkiaSharp.targets",
+        "build/tizen40/SkiaSharp.targets",
+        "lib/MonoAndroid/SkiaSharp.dll",
+        "lib/MonoAndroid/SkiaSharp.xml",
+        "lib/Xamarin.Mac20/SkiaSharp.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.xml",
+        "lib/Xamarin.TVOS/SkiaSharp.dll",
+        "lib/Xamarin.TVOS/SkiaSharp.xml",
+        "lib/Xamarin.WatchOS/SkiaSharp.dll",
+        "lib/Xamarin.WatchOS/SkiaSharp.xml",
+        "lib/Xamarin.iOS/SkiaSharp.dll",
+        "lib/Xamarin.iOS/SkiaSharp.xml",
+        "lib/net45/SkiaSharp.dll",
+        "lib/net45/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0/SkiaSharp.dll",
+        "lib/uap10.0/SkiaSharp.xml",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "runtimes/tizen-armel/native/libSkiaSharp.so",
+        "runtimes/tizen-x86/native/libSkiaSharp.so",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
+        "skiasharp.1.68.0.nupkg.sha512",
+        "skiasharp.nuspec",
+        "xamarin.interactive/SkiaSharp.Workbooks.dll"
+      ]
+    },
+    "SkiaSharp.Extended/1.60.0": {
+      "sha512": "aN5NPB9F7JoLnuMR2a3ZcA5WIcgiaalt8W3JgUXzRCQb+Amphx6rIKWwK3uuA0OlVJY8A21Q8m5TqgnMubRniA==",
+      "type": "package",
+      "path": "skiasharp.extended/1.60.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.3/SkiaSharp.Extended.dll",
+        "lib/netstandard2.0/SkiaSharp.Extended.dll",
+        "lib/portable-net45+win8+wp8+wpa81/SkiaSharp.Extended.dll",
+        "skiasharp.extended.1.60.0.nupkg.sha512",
+        "skiasharp.extended.nuspec"
+      ]
+    },
+    "SkiaSharp.Svg/1.60.0": {
+      "sha512": "rTneyM6mt0w2xCCampFlkO3mGFIwGEJo7L2X3JOdyeMCZDQkyqv7m9kZfA89kLSErXErFnY72TZsryzqTIiT7g==",
+      "type": "package",
+      "path": "skiasharp.svg/1.60.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.3/SkiaSharp.Extended.Svg.dll",
+        "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll",
+        "lib/portable-net45+win8+wp8+wpa81/SkiaSharp.Extended.Svg.dll",
+        "skiasharp.svg.1.60.0.nupkg.sha512",
+        "skiasharp.svg.nuspec"
+      ]
+    },
+    "SkiaSharp.Views/1.68.0": {
+      "sha512": "tCpeBURfS3knCdB3lz1Ck6HQ5jXRT2CPWrT8QJb1PWhcx1SHm9iLWvcv2cu1Z5blkDuLZ1hREnxd07Mx+xS74Q==",
+      "type": "package",
+      "path": "skiasharp.views/1.68.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid/SkiaSharp.Views.Android.dll",
+        "lib/MonoAndroid/SkiaSharp.Views.Android.xml",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Mac.xml",
+        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.dll",
+        "lib/Xamarin.TVOS/SkiaSharp.Views.tvOS.xml",
+        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.dll",
+        "lib/Xamarin.WatchOS/SkiaSharp.Views.watchOS.xml",
+        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.dll",
+        "lib/Xamarin.iOS/SkiaSharp.Views.iOS.xml",
+        "lib/net45/SkiaSharp.Views.Desktop.dll",
+        "lib/net45/SkiaSharp.Views.Desktop.xml",
+        "lib/net45/SkiaSharp.Views.Gtk.dll",
+        "lib/net45/SkiaSharp.Views.Gtk.xml",
+        "lib/net45/SkiaSharp.Views.WPF.dll",
+        "lib/net45/SkiaSharp.Views.WPF.xml",
+        "lib/tizen40/SkiaSharp.Views.Tizen.dll",
+        "lib/tizen40/SkiaSharp.Views.Tizen.xml",
+        "lib/uap10.0/SkiaSharp.Views.UWP.dll",
+        "lib/uap10.0/SkiaSharp.Views.UWP.xml",
+        "runtimes/win10-arm/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "skiasharp.views.1.68.0.nupkg.sha512",
+        "skiasharp.views.nuspec"
+      ]
+    },
+    "SkiaSharp.Views.Forms/1.68.0": {
+      "sha512": "VqxL96ywOA9HUj1MAEO6yvSzg4Tk03ZHvvxQFhbUKgCodDxk9lIUxmBcssTZ/wYjOUn9R2Lf/VIpDMQZlhVh/A==",
+      "type": "package",
+      "path": "skiasharp.views.forms/1.68.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid/SkiaSharp.Views.Forms.dll",
+        "lib/MonoAndroid/SkiaSharp.Views.Forms.xml",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Forms.dll",
+        "lib/Xamarin.Mac20/SkiaSharp.Views.Forms.xml",
+        "lib/Xamarin.iOS/SkiaSharp.Views.Forms.dll",
+        "lib/Xamarin.iOS/SkiaSharp.Views.Forms.xml",
+        "lib/netstandard1.3/SkiaSharp.Views.Forms.dll",
+        "lib/netstandard1.3/SkiaSharp.Views.Forms.xml",
+        "lib/tizen40/SkiaSharp.Views.Forms.dll",
+        "lib/tizen40/SkiaSharp.Views.Forms.xml",
+        "lib/uap10.0/SkiaSharp.Views.Forms.dll",
+        "lib/uap10.0/SkiaSharp.Views.Forms.xml",
+        "skiasharp.views.forms.1.68.0.nupkg.sha512",
+        "skiasharp.views.forms.nuspec"
       ]
     },
     "Syncfusion.Licensing/19.4.0.42": {
@@ -1467,6 +1704,43 @@
         "lib/uap10.0/Syncfusion.SfRating.XForms.dll",
         "syncfusion.xamarin.sfrating.19.4.0.42.nupkg.sha512",
         "syncfusion.xamarin.sfrating.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.SfRotator/19.4.0.42": {
+      "sha512": "cITnjA/pDP20Ruya15vGcUxqFJzdIxtHsNSW1bDb8r2n2pitnb4XpUB7ofgASvzfmvyF2iKOmPrNAkzdu0QKXg==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfrotator/19.4.0.42",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.Android.xml",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfRotator.XForms.xml",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.Android.xml",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.SfRotator.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRotator.iOS.xml",
+        "lib/netstandard2.0/Syncfusion.SfRotator.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfRotator.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfRotator.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfRotator.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfRotator.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfRotator.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfRotator.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfRotator.XForms.xml",
+        "syncfusion.xamarin.sfrotator.19.4.0.42.nupkg.sha512",
+        "syncfusion.xamarin.sfrotator.nuspec",
         "syncfusion_logo.png"
       ]
     },
@@ -2630,6 +2904,9 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
+      "SkiaSharp.Extended >= 1.60.0",
+      "SkiaSharp.Svg >= 1.60.0",
+      "SkiaSharp.Views.Forms >= 1.68.0",
       "SmartParking >= 1.0.0",
       "Syncfusion.Xamarin.Buttons >= 19.4.0.42",
       "Syncfusion.Xamarin.Core >= 19.4.0.42",
@@ -2637,6 +2914,7 @@
       "Syncfusion.Xamarin.SfListView >= 19.4.0.42",
       "Syncfusion.Xamarin.SfMaps >= 19.4.0.42",
       "Syncfusion.Xamarin.SfRating >= 19.4.0.42",
+      "Syncfusion.Xamarin.SfRotator >= 19.4.0.42",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012",
       "Xamarin.Forms.OpenWhatsApp >= 1.0.1"
@@ -2687,6 +2965,18 @@
     "frameworks": {
       "monoandroid11.0": {
         "dependencies": {
+          "SkiaSharp.Extended": {
+            "target": "Package",
+            "version": "[1.60.0, )"
+          },
+          "SkiaSharp.Svg": {
+            "target": "Package",
+            "version": "[1.60.0, )"
+          },
+          "SkiaSharp.Views.Forms": {
+            "target": "Package",
+            "version": "[1.68.0, )"
+          },
           "Syncfusion.Xamarin.Buttons": {
             "target": "Package",
             "version": "[19.4.0.42, )"
@@ -2708,6 +2998,10 @@
             "version": "[19.4.0.42, )"
           },
           "Syncfusion.Xamarin.SfRating": {
+            "target": "Package",
+            "version": "[19.4.0.42, )"
+          },
+          "Syncfusion.Xamarin.SfRotator": {
             "target": "Package",
             "version": "[19.4.0.42, )"
           },
