@@ -77,6 +77,16 @@ C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Andro
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\drawable\timezone.png
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\drawable\reschedule.png
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\drawable\viewmode.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-hdpi\iconsmart.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-mdpi\iconsmart.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-xhdpi\iconsmart.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-xxhdpi\iconsmart.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-xxxhdpi\iconsmart.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-hdpi\smartparkinglogo.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-mdpi\smartparkinglogo.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-xhdpi\smartparkinglogo.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-xxhdpi\smartparkinglogo.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-xxxhdpi\smartparkinglogo.png
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\uploadflags.txt
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\resolvedassemblies.hash
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\android\assets\FormsViewGroup.dll
@@ -729,3 +739,8 @@ C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Andro
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-hdpi\logosmp.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-mdpi\logosmp.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-xhdpi\logosmp.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-xxhdpi\logosmp.png
+C:\Users\Lenovo01\Documents\Git\com.SmartParking\SmartParking\SmartParking.Android\obj\Debug\110\res\mipmap-xxxhdpi\logosmp.png

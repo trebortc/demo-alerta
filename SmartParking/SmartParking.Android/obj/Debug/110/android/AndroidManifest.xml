@@ -17,8 +17,8 @@
   <uses-feature android:name="android.hardware.location" android:required="false" />
   <uses-feature android:name="android.hardware.location.gps" android:required="false" />
   <uses-feature android:name="android.hardware.location.network" android:required="false" />
-  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="SmartParking.Android" android:theme="@style/MainTheme">
-    <activity android:name="crc644f3649a534dfd300.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="SmartParking" android:theme="@style/MainTheme">
+  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@drawable/smartparkinglogo" android:label="SmartParking.Android" android:theme="@style/MainTheme">
+    <activity android:name="crc644f3649a534dfd300.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/logosmp" android:label="SmartParking" android:theme="@style/MainTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

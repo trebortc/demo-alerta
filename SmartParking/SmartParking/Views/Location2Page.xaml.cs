@@ -18,7 +18,7 @@ namespace SmartParking.Views
         public Location2Page()
         {
             this.InitializeComponent();
-            ValidarPermisoDeGPS();
+            //ValidarPermisoDeGPS();
         }
         private async void ValidarPermisoDeGPS()
         {
