@@ -20,7 +20,8 @@ namespace SmartParking
         {
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NTY1NzAzQDMxMzkyZTM0MmUzMEk3TGVNdTQvb0gvRGpSQlY0dFZaTWJ2VkpNOEZSUzNFWkFnOTlIdkVQeFk9");
             InitializeComponent();
-            ValidarPermisoDeGPS();           
+            VericarCredencialesParaIngreso();
+            //ValidarPermisoDeGPS();           
             //if (App.Current.Properties.ContainsKey("usuario"))
             //{
             //    Usuario usuario = JsonConvert.DeserializeObject<Usuario>((string)App.Current.Properties["usuario"]);
