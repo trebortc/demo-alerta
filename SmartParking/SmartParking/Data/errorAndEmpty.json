@@ -1,5 +1,5 @@
 {
   "locationDeniedImagePath": "LocationAccessDenied.svg",
   "locationDeniedHeader": "LOCATION BLOCKED",
-  "locationDeniedContent": "Esta aplicación recopila datos de ubicación para habilitar la función de emitir una alerta de seguridad enviando su ubicación, nombre y su número de teléfono al servidor de Smart Parking para poder auxiliar al usuario en caso de una emergencia incluso cuando la aplicación está cerrada o no está en uso."
+  "locationDeniedContent": "Esta aplicación recopila datos de ubicación, para habilitar la función de emitir una alerta de seguridad enviando su ubicación, nombre y su número de teléfono al servidor de Smart Parking para poder auxiliar al usuario en caso de una emergencia incluso cuando la aplicación está cerrada o no está en uso."
 }
