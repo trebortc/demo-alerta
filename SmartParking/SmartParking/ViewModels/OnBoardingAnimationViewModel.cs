@@ -3,6 +3,7 @@ using SmartParking.Views;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -33,15 +34,16 @@ namespace SmartParking.ViewModels
         /// </summary>
         public OnBoardingAnimationViewModel()
         {
+            
             this.SkipCommand = new Command(this.Skip);
             this.NextCommand = new Command(this.Next);
             this.Boardings = new ObservableCollection<Boarding>
             {
                 new Boarding()
                 {
-                    ImagePath = "ReSchedule.png",
+                    ImagePath = "ubicacion.png",
                     Header = "ADVERTENCIA",
-                    Content = "Smart Parking recopila datos de ubicación para permitir el seguimiento de su ubicación en la emision de alertas de emergencia incluso cuando la aplicación está cerrada o no está en uso.",
+                    Content = "Esta aplicación recopila datos de ubicación, para habilitar la función de emitir una alerta de seguridad enviando su ubicación, nombre y su número de teléfono al servidor de Smart Parking para poder auxiliar al usuario en caso de una emergencia incluso cuando la aplicación está cerrada o no está en uso.",
                     RotatorView = new WalkthroughItemPage(),
                 }                
             };
@@ -51,6 +53,9 @@ namespace SmartParking.ViewModels
             {
                 boarding.RotatorView.BindingContext = boarding;
             }
+
+            //MensajeUbicacion();
+            //MensajeUbicacionAndroidPermisoDeGPS();
         }
 
         #endregion
@@ -146,7 +151,35 @@ namespace SmartParking.ViewModels
         #endregion
 
         #region Methods
+        public async void MensajeUbicacion()
+        {
+            await Application.Current.MainPage.DisplayAlert("Advertencia", "Smart Parking recopila datos de ubicación para permitir " +
+                                                                            "el seguimiento de su ubicación en la emision de alertas " +
+                                                                            "de emergencia incluso cuando la aplicación está cerrada " +
+                                                                            "o no está en uso.", "Aceptar");
+        }
+        public async void MensajeUbicacionAndroidPermisoDeGPS()
+        {            
+            var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
+            if (status == PermissionStatus.Granted)
+            {
 
+            }
+            else
+            {
+                //Ask for the permission
+                status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
+
+                if (status == PermissionStatus.Granted)
+                {
+
+                }
+                else
+                {
+                    MensajeUbicacionAndroidPermisoDeGPS();
+                }
+            }            
+        }
         private static void MoveToNextPage()
         {
             if (Device.RuntimePlatform == Device.UWP && Application.Current.MainPage.Navigation.NavigationStack.Count > 1)
@@ -185,6 +218,7 @@ namespace SmartParking.ViewModels
         /// <param name="obj">The Object</param>
         private void Next(object obj)
         {
+            MensajeUbicacionAndroidPermisoDeGPS();
             Application.Current.MainPage = new NavigationPage(new LoginPage());
         }
 

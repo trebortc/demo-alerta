@@ -15155,7 +15155,10 @@ namespace SmartParking.Droid
 			public const int tooltip_frame_light = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int ViewMode = 2131165380;
+			public const int ubicacion = 2131165380;
+			
+			// aapt resource value: 0x7F0700C5
+			public const int ViewMode = 2131165381;
 			
 			static Drawable()
 			{

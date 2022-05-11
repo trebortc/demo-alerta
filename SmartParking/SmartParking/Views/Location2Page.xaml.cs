@@ -18,33 +18,7 @@ namespace SmartParking.Views
         public Location2Page()
         {
             this.InitializeComponent();
-            ValidarPermisoDeGPS();
-        }
-        private async void ValidarPermisoDeGPS()
-        {
-            var status = await Permissions.CheckStatusAsync<Permissions.LocationWhenInUse>();
-            if (status == PermissionStatus.Granted)
-            {
-                
-            }
-            else
-            {                
-                    //await Application.Current.MainPage.DisplayAlert("Advertencia", "Smart Parking recopila datos de ubicación para permitir " +
-                    //                                                            "el seguimiento de su ubicación en la emision de alertas " +
-                    //                                                            "de emergencia incluso cuando la aplicación está cerrada " +
-                    //                                                            "o no está en uso.", "Aceptar");   
-                //Ask for the permission
-                status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
-
-                if (status == PermissionStatus.Granted)
-                {
-                    
-                }
-                else
-                {
-                    ValidarPermisoDeGPS();
-                }
-            }
-        }
+            //ValidarPermisoDeGPS();
+        }        
     }
 }

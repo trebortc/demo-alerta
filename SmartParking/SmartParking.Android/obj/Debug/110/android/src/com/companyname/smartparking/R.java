@@ -7116,7 +7116,8 @@ public final class R {
     public static final int timezone=0x7f0700c1;
     public static final int tooltip_frame_dark=0x7f0700c2;
     public static final int tooltip_frame_light=0x7f0700c3;
-    public static final int viewmode=0x7f0700c4;
+    public static final int ubicacion=0x7f0700c4;
+    public static final int viewmode=0x7f0700c5;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
