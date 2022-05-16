@@ -53,9 +53,6 @@ namespace SmartParking.ViewModels
             {
                 boarding.RotatorView.BindingContext = boarding;
             }
-
-            //MensajeUbicacion();
-            //MensajeUbicacionAndroidPermisoDeGPS();
         }
 
         #endregion
@@ -167,7 +164,6 @@ namespace SmartParking.ViewModels
             }
             else
             {
-                //Ask for the permission
                 status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
 
                 if (status == PermissionStatus.Granted)
@@ -176,7 +172,7 @@ namespace SmartParking.ViewModels
                 }
                 else
                 {
-                    MensajeUbicacionAndroidPermisoDeGPS();
+                    //MensajeUbicacionAndroidPermisoDeGPS();
                 }
             }            
         }

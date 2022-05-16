@@ -87,7 +87,7 @@ namespace SmartParking
             }
             catch (PermissionException pEx)
             {
-                await DisplayAlert("Error", pEx.Message, "OK");
+                await DisplayAlert("Error", "No se tiene permisos para enviar la ubicación", "OK");
             }
             catch (Exception ex)
             {
